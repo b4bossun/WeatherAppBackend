@@ -17,15 +17,15 @@ app.use(bodyParser.json());
 //Db connection
 mongoose.set("strictQuery", false);
 mongoose
-    .connect(
-        "mongodb+srv://oyinloyebosun1:March12345678@cluster0.7msx25l.mongodb.net/",
-        {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        }
-    )
-    .then(() => console.log("DB connected"))
-    .catch((err) => console.log("DB Connection Error", err));
+  .connect(
+    "mongodb+srv://Bayo4real:Bayo4real@hms.qg1nt.mongodb.net/?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
+  .then(() => console.log("DB connected"))
+  .catch((err) => console.log("DB Connection Error", err));
 
 app.use("/api", routes);
 // app.use("/api/users", routes);
